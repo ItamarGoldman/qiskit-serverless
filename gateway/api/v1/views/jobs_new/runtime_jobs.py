@@ -4,7 +4,6 @@ API endpoint to handle runtime jobs.
 
 # pylint: disable=abstract-method
 
-from typing import Any
 from uuid import UUID
 
 from drf_yasg.utils import swagger_auto_schema
@@ -15,7 +14,6 @@ from rest_framework.response import Response
 
 from api import serializers as api_serializers
 from api.models import Job, RuntimeJob
-from api.serializers import RuntimeJobSerializer
 from api.v1.endpoint_decorator import endpoint
 from api.v1.endpoint_handle_exceptions import endpoint_handle_exceptions
 from api.v1.views.swagger_utils import standard_error_responses

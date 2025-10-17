@@ -13,19 +13,20 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
-from rest_framework.decorators import action
-from rest_framework.exceptions import MethodNotAllowed
-from rest_framework import viewsets, status
-from rest_framework.response import Response
 
-from api.models import RuntimeJob
+# from rest_framework.decorators import action
+# from rest_framework.exceptions import MethodNotAllowed
+# from rest_framework import viewsets, status
+# from rest_framework.response import Response
+
+# from api.models import RuntimeJob
 from api.repositories.jobs import JobsRepository, JobFilters
 from api.repositories.functions import FunctionRepository
 from api.repositories.providers import ProviderRepository
 from api.serializers import (
     JobSerializer,
     JobSerializerWithoutResult,
-    RuntimeJobSerializer,
+    # RuntimeJobSerializer,
 )
 from api.decorators.trace_decorator import trace_decorator_factory
 
