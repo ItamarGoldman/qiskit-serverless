@@ -4,7 +4,7 @@ from qiskit.primitives import StatevectorSampler as Sampler
 from qiskit_serverless import save_result
 
 # all print statement will be available in job logs
-print("Running function...")
+print("Running functions...")
 
 # creating circuit
 circuit = QuantumCircuit(2)
